@@ -1,9 +1,11 @@
 let inputBox = document.getElementById("inputBox");
+let rangevalue = document.querySelector(".rangevalue");
 let inputRange = document.getElementById("inputRange");
 let generateBtn = document.querySelector(".generateBtn");
-
+rangevalue.innerHTML = inputRange.value;
 generateBtn.addEventListener("click", () => {
   inputBox.value = passwordGen(inputRange.value);
+
 });
 
 function passwordGen(range) {
